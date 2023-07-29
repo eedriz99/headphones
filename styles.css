@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --primary-bg: #ff6565;
+  --third-bg: #071629;
+  --font-size: 20px;
+  --btn-hover-opacity: 0.9;
+  --link-hover: #ff6565;
+}
+
+body {
+  text-align: center;
+}
+
+.hero-section {
+  background-image: url("/images/headphones_hero_1.jpg");
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.hero-section header {
+  display: flex;
+}
+
+.mini-menu {
+  background: 0px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  flex: 1;
+}
+
+.hero-section header div {
+  flex: 8;
+  padding-right: 50px;
+}
+
+.brand-logo img {
+  height: 50px;
+}
+
+.nav-list {
+  margin-top: 30px;
+}
+
+.nav-list .nav-list-item {
+  list-style-type: none;
+  font-size: calc(var(--font-size) * 1.5);
+  margin-top: 15px;
+}
+
+.nav-list .nav-list-item .nav-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  margin-left: 20px;
+  display: inline-block; /*to take all available spaces in the link item */
+}
+
+.nav-list .nav-list-item .nav-link:hover {
+  color: var(--link-hover);
+}
+
+.text-section {
+  margin: 100px auto 30px auto;
+  color: var(--primary-color);
+}
+
+.text-section .sub {
+  margin: 10px 0;
+}
+
+.text-section .CTA {
+  padding: 10px 20px;
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+  border: 0;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.text-section .CTA:hover {
+  opacity: var(--btn-hover-opacity);
+}
+
+.text-section .text {
+  margin-top: 20px;
+  line-height: 2;
+}
+
+@media only screen and (min-width: 480px) {
+  .hero-section {
+    height: 100vh;
+  }
+
+  .mini-menu {
+    display: none;
+  }
+
+  .hero-section header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .nav-list .nav-list-item {
+    margin-top: 0;
+  }
+
+  .text-section {
+    width: 60%;
+    margin: 200px auto 20px auto;
+    color: var(--primary-color);
+  }
+
+  .text-section .sub {
+    margin: 10px 0;
+  }
+}
